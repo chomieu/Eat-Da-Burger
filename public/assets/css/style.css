@@ -1,3 +1,7 @@
+.mobile-h {
+  font-size: max(2vw, 25px);
+}
+
 img {
   height: 20vh;
 }
