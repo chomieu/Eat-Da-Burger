@@ -1,38 +1,45 @@
-<h1>Burgers!</h1>
+<header class="text-center bg-white pb-2">
+  <img src="/assets/img/chasingBurger.gif">
+  <h1>Na nya nyan nya nyan~ i'm lovin' it!</h1>
+</header>
 
-<h2>Burgers that are not eaten!</h2>
+<main class="container">
+  <article class="row row-cols-1 row-cols-md-2 my-4 p-2">
+    <section class="col">
+      <h2 class="text-center text-white border-bottom">Menu</h2>
+      <dl class="bg-white p-4">
+        {{#each burgers}}
+        {{#unless eaten}}
+        {{> burgers/burger-block eaten=true}}
+        {{/unless}}
+        {{/each}}
+      </dl>
+    </section>
+    <section class="col">
+      <h2 class="text-center text-white border-bottom">Order</h2>
+      <dl class="bg-white p-4">
+        {{#each burgers}}
+        {{#if eaten}}
+        {{> burgers/burger-block eaten=false}}
+        {{/if}}
+        {{/each}}
+      </dl>
+    </section>
+  </article>
 
-<ul>
-  {{#each burgers}}
-    {{#unless eaten}}
-      {{> burgers/burger-block eaten=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+  <section class="d-flex justify-content-center">
+  <form class="create-form text-center w-50">
+    <h2 class="text-white">Create New Burger</h2>
+    <div class="form-group row">
+      <input type="text" class="form-control" id="bu" name="name" placeholder="Burger Name">
+    </div>
+    <div class="form-group form-inline d-flex justify-content-center">
+      <label for="eaten" class="col-form-label mx-2">Add to: </label><br>
+      <input type="radio" class="form-control mx-2" name="eaten" value="0"> Menu
+      <input type="radio" class="form-control mx-2" name="eaten" value="1" checked> Order<br>
+    </div>
+    <button class="btn btn-primary" type="submit">Add Burger</button>
+  </form>
+  </section>
 
-<h2>Burgers that are eaten!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if eaten}}
-      {{> burgers/burger-block eaten=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-  <div class="form-group">
-    <label for="eaten">Eaten?</label><br>
-    <input type="radio" name="eaten" value="1" checked> Eaten!<br>
-    <input type="radio" name="eaten" value="0"> Not Eaten!
-  </div>
-
-  <button type="submit">Add Burger</button>
-</form>
+</main>

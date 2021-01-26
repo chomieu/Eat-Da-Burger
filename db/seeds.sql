@@ -3,4 +3,4 @@ INSERT INTO burgers (name) VALUES ('McChicken');
 INSERT INTO burgers (name, eaten) VALUES ('Quarter Pounder', true);
 INSERT INTO burgers (name, eaten) VALUES ('Cheeseburger', true);
 INSERT INTO burgers (name, eaten) VALUES ('Big Mac', true);
-INSERT INTO burgers (name) VALUES ('Shack Stack');
+INSERT INTO burgers (name) VALUES ('Bacon McDouble');

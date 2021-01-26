@@ -1,17 +1,9 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+img {
+  height: 20vh;
 }
 
-.label {
-  font-weight: bold;
-}
-
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
+dl {
+  border-radius: 25px;
 }
 
 .form-group {
