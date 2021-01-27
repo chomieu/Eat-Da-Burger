@@ -2,10 +2,9 @@
 	{{name}}
 </dt>
 <dd>
-	{{#if eaten}}
-	<button class="btn btn-success change-eat" data-id="{{id}}" data-neweat="{{eaten}}">Order!</button>
-	{{else}}
-	<button class="btn btn-danger change-eat" data-id="{{id}}" data-neweat="{{eaten}}">Not Today!</button>
-	{{/if}}
+
+	<button class="btn {{#if eaten}}btn-success{{else}}btn-danger{{/if}} change-eat" data-id="{{id}}"data-neweat="{{eaten}}">
+		{{#if eaten}}Order!{{else}}Not Today!{{/if}}
+	</button>
 	<button class="btn btn-secondary delete-burger" data-id="{{this.id}}">X</button>
 </dd>
