@@ -6,7 +6,8 @@ Full-stack burger web app utilizing handlebars and mySQL.
    
 ## Table of Contents
 * [Installation](#installation)
-* [Usage](#usage)
+* [Preview](#preview)
+* [Link](#link)
 * [Technologies](#technologies)
 * [License](#license)
 * [Questions](#questions)
@@ -22,9 +23,12 @@ git clone git@github.com:chomieu/Team-Profile-Generator.git
 npm install *dependency*
 ```
 
-## Usage
-[Walkthrough Video](https://drive.google.com/file/d/1vjL7vJ6wA-YHFK34HZD4YKaIQww08NQA/view)</br>
-![Walkthrough GIF](./walkthrough.gif)
+## Preview
+[Preview Video](https://drive.google.com/file/d/1YGvEXCyYPByA85qa1dcprnXvhvHni2P8/view)</br>
+![Preview GIF](./public/assets/img/preview.gif)
+
+## Link
+<https://vast-mesa-57686.herokuapp.com/>
 
 ## Technologies
 Built with [Node.js](https://nodejs.org/en/), [Express.js](https://expressjs.com) backend, [mySQL](https://www.mysql.com) database, [Handlebars](https://handlebarsjs.com) templates, and deployed on [Heroku](https://devcenter.heroku.com/).
