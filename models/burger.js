@@ -1,4 +1,4 @@
-// Import the ORM to create functions that will interact with the database.
+// Import the ORM to create functions that will interact with the database
 var orm = require("../config/orm.js");
 
 var burger = {
@@ -11,5 +11,5 @@ var burger = {
   delete: function (condi, cb) { orm.delete("burgers", condi, cb )}
 }
 
-// Export the database functions for the controller (burgersController.js).
+// Export the database functions for the controller (burgersController.js)
 module.exports = burger;
