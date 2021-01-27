@@ -32,7 +32,7 @@ var orm = {
     })
   },
   update: function(table, objColVals, condi, cb) {
-    var query = connection.query(`UPDATE ${table} SET ${objToSql(objColVals)} WHERE ${condi}` , (err, result) => {
+    connection.query(`UPDATE ${table} SET ${objToSql(objColVals)} WHERE ${condi}` , (err, result) => {
       if (err) throw err
       cb(result)
     })
