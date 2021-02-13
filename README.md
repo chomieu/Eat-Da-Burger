@@ -16,7 +16,7 @@ Full-stack burger web app utilizing handlebars and mySQL.
 1. Make sure you have Node.js installed ([download](https://nodejs.org/en/))
 2. Clone this repo into your directory
 ```
-git clone git@github.com:chomieu/Team-Profile-Generator.git
+git clone git@github.com:chomieu/Eat-Da-Burger.git
 ```
 3. Install any dependencies
 ```
