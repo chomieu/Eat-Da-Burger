@@ -20,7 +20,7 @@ git clone git@github.com:chomieu/Eat-Da-Burger.git
 ```
 3. Install any dependencies
 ```
-npm install *dependency*
+npm install
 ```
 
 ## Preview
