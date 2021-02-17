@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
         
 ## Description
-Full-stack burger web app utilizing handlebars and mySQL.
+Full-stack burger web app utilizing Handlebars and mySQL database.
    
 ## Table of Contents
 * [Installation](#installation)
